@@ -19,12 +19,16 @@ const Login = props => {
 
   useEffect(() => {
     console.log('redux state->', main);
-    if (main != null && main.isVerified) {
-      props.navigation.navigate('Tabs', {
-        id: '123',
-        name: 'chamila',
-      });
-    }
+    // if (main != null && main.isVerified) {
+    //   props.navigation.navigate('Tabs', {
+    //     id: '123',
+    //     name: 'chamila',
+    //   });
+    // }
+    props.navigation.navigate('Tabs', {
+      id: '123',
+      name: 'chamila',
+    });
   });
 
   return (

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {Text, TouchableOpacity, SafeAreaView} from 'react-native';
 import MainController from '../controllers/MainController';
 
-const Home = props => {
+const Home2 = props => {
   const {main} = MainController();
   
   useEffect(() => {
@@ -14,7 +14,7 @@ const Home = props => {
       <Text>HOME SCFREEN</Text>
       <TouchableOpacity
         onPress={() => {
-          props.navigation.navigate('Home2', {
+          props.navigation.navigate('Home3', {
             id: '123',
             name: 'chamila',
           });
@@ -25,4 +25,4 @@ const Home = props => {
   );
 };
 
-export default Home;
+export default Home2;
